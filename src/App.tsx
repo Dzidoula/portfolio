@@ -190,7 +190,12 @@ export default function App() {
                     <span key={g} className="rounded-full bg-accent/10 px-2.5 py-0.5 text-xs text-accent">{g}</span>
                   ))}
                 </div>
-                <div className="mt-4 text-sm">
+                <div className="mt-4 flex flex-wrap gap-x-5 gap-y-1 text-sm">
+                  {p.demo && (
+                    <a href={p.demo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-medium text-heat hover:underline">
+                      {tx.demo} <ArrowUpRight size={14} />
+                    </a>
+                  )}
                   {p.repo ? (
                     <a href={p.repo} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1 font-medium text-accent hover:underline">
                       {tx.code} <ArrowUpRight size={14} />

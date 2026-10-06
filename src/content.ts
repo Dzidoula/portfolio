@@ -12,6 +12,7 @@ type Project = {
   desc: Record<Lang, string>
   tags: string[]
   repo?: string
+  demo?: string
 }
 
 export const projects: Project[] = [
@@ -66,6 +67,17 @@ export const projects: Project[] = [
     tags: ['React', 'TypeScript', 'NestJS'],
   },
 ]
+
+projects.push({
+  title: 'Jersey Masters',
+  desc: {
+    en: 'Demo shop for African football jerseys: dynamic country themes, 3D tilt, fly-to-cart animation and a cart drawer. Pure HTML/CSS/JS.',
+    fr: 'Boutique démo de maillots de football africains : thèmes dynamiques par pays, inclinaison 3D, animation vers le panier et panier latéral. HTML/CSS/JS pur.',
+  },
+  tags: ['HTML', 'CSS', 'JavaScript', 'Animations'],
+  repo: 'https://github.com/Dzidoula/jersey-masters',
+  demo: 'https://jersey-masters.vercel.app',
+})
 
 export const experience = [
   {
@@ -148,6 +160,7 @@ export const t = {
     projectsT: 'Projects',
     private: 'Private repository',
     code: 'View code',
+    demo: 'Live demo',
     expT: 'Experience',
     skillsT: 'Skills',
     awardT: 'Award',
@@ -176,6 +189,7 @@ export const t = {
     projectsT: 'Projets',
     private: 'Dépôt privé',
     code: 'Voir le code',
+    demo: 'Voir la démo',
     expT: 'Expérience',
     skillsT: 'Compétences',
     awardT: 'Distinction',
